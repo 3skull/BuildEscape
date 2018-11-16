@@ -2,17 +2,17 @@
 # Visual Studio 15
 VisualStudioVersion = 15.0.25807.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{6BEF61EB-6A55-40BA-8007-7C235BF9E946}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{BCD8CF1D-760E-4740-A72B-537C28418426}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{987C096D-3383-4EB1-9DAF-87AC94F336CB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{DE2D3C4F-16C9-41FD-808A-433A019F8EFF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BuildEscape", "Intermediate\ProjectFiles\BuildEscape.vcxproj", "{43227F34-87E3-4932-8C1E-2ED4DE99E78A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UE4", "Intermediate\ProjectFiles\UE4.vcxproj", "{2B2EE939-F58B-46DA-8246-98D8A160917A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{31D4E5F7-550D-460D-81E2-4ADE29BFABF4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{BE9CE0EB-8663-4432-8C75-1870437380F4}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\Unreal\UE_4.21\Engine\Extras\VisualStudioDebugging\UE4.natvis = ..\..\Unreal\UE_4.21\Engine\Extras\VisualStudioDebugging\UE4.natvis
+		..\..\..\Unreal\UE_4.21\Engine\Extras\VisualStudioDebugging\UE4.natvis = ..\..\..\Unreal\UE_4.21\Engine\Extras\VisualStudioDebugging\UE4.natvis
 	EndProjectSection
 EndProject
 Global
@@ -80,8 +80,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{2B2EE939-F58B-46DA-8246-98D8A160917A} = {6BEF61EB-6A55-40BA-8007-7C235BF9E946}
-		{43227F34-87E3-4932-8C1E-2ED4DE99E78A} = {987C096D-3383-4EB1-9DAF-87AC94F336CB}
-		{43227F34-87E3-4932-8C1E-2ED4DE99E78A} = {987C096D-3383-4EB1-9DAF-87AC94F336CB}
+		{2B2EE939-F58B-46DA-8246-98D8A160917A} = {BCD8CF1D-760E-4740-A72B-537C28418426}
+		{43227F34-87E3-4932-8C1E-2ED4DE99E78A} = {DE2D3C4F-16C9-41FD-808A-433A019F8EFF}
+		{43227F34-87E3-4932-8C1E-2ED4DE99E78A} = {DE2D3C4F-16C9-41FD-808A-433A019F8EFF}
 	EndGlobalSection
 EndGlobal
