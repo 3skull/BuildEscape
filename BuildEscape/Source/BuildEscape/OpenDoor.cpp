@@ -33,38 +33,20 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 
-	if (GetTotalMassOfActorsOnPlate() > 30.0f) 
+	if (GetTotalMassOfActorsOnPlate() > TriggerMass)
 	{
-		OpenDoor();
-		LastDoorOpenTime = GetWorld()->GetTimeSeconds();
+		OnOpenRequest.Broadcast();
 	}
-	if (DoorCloseDelay < (GetWorld()->GetTimeSeconds() - LastDoorOpenTime)) {
-		CloseDoor();
+	else{
+		OnCloseRequest.Broadcast();
 	}
-	
-	
-	
 }
-void UOpenDoor::OpenDoor()
-{
-	FRotator NewRotation = FRotator(0.0f, OpenAngle, 0.0f);
-	if (!Owner) { return; }
-	Owner->SetActorRotation(NewRotation);
 
-}
-void UOpenDoor::CloseDoor()
-{
 
-	FRotator NewRotation = FRotator(0.0f, 0.0f, 0.0f);
-	if (!Owner) { return; }
-	Owner->SetActorRotation(NewRotation);
-
-}
 
 float UOpenDoor::GetTotalMassOfActorsOnPlate() 
 {
 	float TotalMass = 0.0f;
-
 	TArray<AActor*> OverlappingActors;
 	if (PressurePlate) {
 
